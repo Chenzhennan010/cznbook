@@ -1,0 +1,95 @@
+/* Optional motion layer. The document remains complete without JavaScript. */
+.hero-camera { position: absolute; inset: 0; overflow: hidden; }
+.hero-camera .hero-media { width: 100%; }
+.hero-line { display: block; }
+.hero-line > span { display: inline-block; }
+.hero-scroll { position: absolute; z-index: 2; left: var(--page-pad); bottom: 30px; display: flex; gap: 13px; align-items: center; color: #fff; font-size: 9px; letter-spacing: .15em; min-height: 44px; }
+.hero-scroll span { display: block; width: 1px; height: 26px; background: #fff8; transform-origin: top; }
+.site-nav a[aria-current="location"] { text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; }
+
+/* The diagram and capability list share a single composition. */
+.approach { position: relative; padding-block: clamp(72px, 7vw, 112px); }
+.approach .section-intro h2 { font-size: clamp(40px, 4.6vw, 66px); }
+.approach-layout { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(36px, 7vw, 112px); align-items: start; margin-top: 48px; }
+.space-drawing { width: 100%; margin: 0; color: #565d61; border-top: 1px solid var(--line); }
+.drawing-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 22px 0; font-size: 16px; color: var(--ink); }
+.drawing-heading > span:last-child { font-size: 10px; letter-spacing: .1em; color: var(--muted); }
+.drawing-field { max-width: 480px; margin: 0 auto; padding: 44px 12px 28px; background: radial-gradient(ellipse at center, #eceef0 0%, #f5f5f760 42%, transparent 72%); }
+.space-drawing svg { display: block; overflow: visible; width: 100%; height: auto; stroke-width: .9; }
+.drawing-guides { opacity: .34; }
+.drawing-accent { color: var(--accent); opacity: .7; }
+.space-drawing figcaption { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; border-top: 1px solid var(--line); padding-top: 16px; font-size: 11px; }
+.space-drawing figcaption i { font-style: normal; padding: 0 8px; color: #a1a5a8; }
+.space-drawing figcaption span:last-child { font-size: 9px; letter-spacing: .08em; color: var(--muted); }
+.approach-layout .approach-grid { display: block; margin: 0; border-top: 0; }
+.approach-layout .approach-grid article { display: grid; grid-template-columns: 28px minmax(0, 1fr); gap: 8px 16px; min-height: 0; padding: 24px 0 28px; border: 0; border-top: 1px solid var(--line); }
+.approach-layout .approach-grid article:last-child { border-bottom: 1px solid var(--line); }
+.approach-layout .approach-number { padding-top: 6px; font-size: 10px; font-weight: 500; color: var(--muted); }
+.approach-layout .approach-grid h3 { margin: 0; font-size: clamp(21px, 2vw, 28px); line-height: 1.3; }
+.approach-layout .approach-grid p { grid-column: 2; max-width: 34ch; font-size: 15px; line-height: 1.8; }
+.approach .process { margin-top: 72px; }
+
+/* Transform-only shutters reveal the work without changing final image crops. */
+.photo-image { display: block; position: relative; overflow: hidden; }
+.photo-camera { display: block; transform-origin: center; }
+.archive-visual { display: block; overflow: hidden; border-radius: 8px; }
+.media-curtain { position: absolute; z-index: 3; inset: -1px; background: #151719; pointer-events: none; transform-origin: center top; }
+
+.photo-register { display: flex; align-items: center; gap: 28px; margin: 0 auto 70px; padding: 15px 0; max-width: var(--max-width); border-block: 1px solid var(--line); font-size: 9px; letter-spacing: .08em; color: #676c70; }
+.photo-register span:nth-child(2) { margin-left: auto; }
+.photo-register i { color: var(--ink); font-size: 22px; font-style: normal; }
+.photo-grid a { position: relative; }
+.photo-grid a::before { content: ""; position: absolute; z-index: 1; inset: 15px 15px 56px; pointer-events: none; opacity: 0; transform: scale(1.025); background: linear-gradient(#fff,#fff) left top / 20px 1px no-repeat, linear-gradient(#fff,#fff) left top / 1px 20px no-repeat, linear-gradient(#fff,#fff) right top / 20px 1px no-repeat, linear-gradient(#fff,#fff) right top / 1px 20px no-repeat, linear-gradient(#fff,#fff) left bottom / 20px 1px no-repeat, linear-gradient(#fff,#fff) left bottom / 1px 20px no-repeat, linear-gradient(#fff,#fff) right bottom / 20px 1px no-repeat, linear-gradient(#fff,#fff) right bottom / 1px 20px no-repeat; transition: opacity .35s, transform .5s var(--ease-out); }
+.photo-grid a::after { content: "查看书页 ↗"; position: absolute; z-index: 2; top: 28px; right: 28px; padding: 9px 15px; border: 1px solid #ffffff70; border-radius: 999px; background: #1118; color: #fff; font-size: 11px; opacity: 0; transform: translateY(5px); transition: opacity .35s, transform .35s; pointer-events: none; }
+.photo-grid a:hover::before, .photo-grid a:focus-visible::before, .photo-grid a:hover::after, .photo-grid a:focus-visible::after { opacity: 1; transform: none; }
+.photo-grid figcaption { border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.photo-grid img { border-radius: 2px; }
+.contact { isolation: isolate; }
+.contact-wordmark { position: absolute; right: -1.5vw; bottom: 15%; font-family: Arial, sans-serif; font-size: clamp(180px, 37vw, 640px); font-weight: 800; line-height: .8; letter-spacing: -.08em; color: transparent; -webkit-text-stroke: 1px #ffffff13; pointer-events: none; z-index: 0; }
+.contact-wordmark span { font-size: .12em; letter-spacing: -.04em; vertical-align: top; -webkit-text-stroke: 0; color: #ffffff18; }
+.archive-grid a { display: block; }
+.archive-grid a:focus-visible { outline-color: #fff; }
+.work-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 24px; margin-top: 76px; border-top: 1px solid var(--line-dark); border-bottom: 1px solid var(--line-dark); min-height: 76px; }
+.work-toolbar p { margin: 0; font-size: 11px; color: #aaadb2; }
+.work-toolbar p > span { margin-right: 14px; color: #fff; font-size: 24px; font-weight: 400; font-variant-numeric: tabular-nums; }
+.work-toolbar i { font-style: normal; padding: 0 12px; color: #62666c; }
+.work-toolbar a { display: inline-flex; align-items: center; gap: 36px; min-height: 48px; font-size: 12px; color: #eee; }
+.work-toolbar a span { font-size: 21px; transition: transform .3s var(--ease-out); }
+.work-toolbar a:hover span { transform: translate(3px, -3px); }
+.work-toolbar + .project-list { margin-top: 40px; }
+.project-media { position: relative; }
+.project-media::after { content: "打开作品集 ↗"; position: absolute; right: 22px; bottom: 22px; background: #151719e6; color: #fff; padding: 10px 18px; border-radius: 999px; font-size: 11px; letter-spacing: .03em; opacity: 0; transform: translateY(6px); transition: transform .3s, opacity .3s; pointer-events: none; }
+.project-trigger:hover .project-media::after, .project-trigger:focus-visible .project-media::after { opacity: 1; transform: none; }
+.back-to-top { display: inline-flex; align-items: center; gap: 24px; min-height: 44px; font-size: 10px; }
+.back-to-top span { font-size: 16px; }
+
+/* Content stays readable if animation scripts are absent. */
+.reveal { opacity: 1; transform: none; }
+.reveal.will-reveal:not(.is-visible) { opacity: 0; transform: translateY(16px); }
+
+@media (min-width: 1100px) and (min-height: 750px) {
+  .space-drawing { position: sticky; top: 112px; }
+}
+@media (max-width: 760px) {
+  .hero-scroll { bottom: 10px; font-size: 8px; }
+  .hero-caption { display: none; }
+  .work-toolbar { margin-top: 48px; align-items: flex-start; flex-direction: column; gap: 8px; padding-block: 16px; }
+  .work-toolbar a { justify-content: space-between; width: 100%; }
+  .project-media::after { opacity: 1; transform: none; right: 12px; bottom: 12px; padding: 8px 13px; font-size: 10px; }
+  .approach-layout { grid-template-columns: minmax(0, 1fr); gap: 40px; margin-top: 40px; }
+  .drawing-field { max-width: 430px; margin: 0 auto; padding: 38px 16px 22px; }
+  .drawing-heading { font-size: 15px; }
+  .approach-layout .approach-grid article { padding-block: 22px; }
+  .approach-layout .approach-grid h3 { font-size: 22px; }
+  .approach .process { margin-top: 48px; }
+  .photo-register { margin-bottom: 48px; gap: 12px; font-size: 7px; }
+  .photo-register span:nth-child(2) { display: none; }
+  .photo-register i { margin-left: auto; }
+  .photo-grid a::after { opacity: 1; transform: none; top: 14px; right: 14px; padding: 6px 11px; font-size: 10px; }
+  .contact-wordmark { bottom: 8%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reveal.will-reveal:not(.is-visible) { opacity: 1; transform: none; }
+  .photo-grid a::before, .photo-grid a::after { transition: none; }
+  .media-curtain { display: none; }
+}
