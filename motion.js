@@ -110,16 +110,18 @@
       replayOnVisit(host, animation, "archive-reveal-" + index);
     });
 
-    if (desktop) {
-      // Ground opens first, structure follows, then the roof lifts.
+    {
+      // On phones the figure itself defines the range, not the much taller skills column.
       var drawing = gsap.timeline({
         defaults: { ease: "none" },
-        scrollTrigger: { id: "space-assembly", trigger: ".approach-layout", start: "top 80%", end: "bottom 55%", scrub: .6 }
+        scrollTrigger: { id: "space-assembly", trigger: desktop ? ".approach-layout" : ".space-drawing", start: desktop ? "top 80%" : "top 85%", end: desktop ? "bottom 55%" : "bottom 35%", scrub: desktop ? .6 : .18 }
       });
-      drawing.fromTo(".drawing-floor", { y: 0, opacity: .5 }, { y: 18, opacity: 1, duration: .6 }, 0);
+      drawing.fromTo(".drawing-floor", { y: 0, opacity: .5 }, { y: desktop ? 18 : 12, opacity: 1, duration: .6 }, 0);
       drawing.fromTo(".drawing-columns", { opacity: .3 }, { opacity: 1, duration: .6 }, .2);
-      drawing.fromTo(".drawing-roof", { y: 0 }, { y: -42, duration: .9 }, .35);
+      drawing.fromTo(".drawing-roof", { y: 0 }, { y: desktop ? -42 : -32, duration: .9 }, .35);
       drawing.fromTo(".drawing-guides", { opacity: .12 }, { opacity: .4, duration: 1 }, 0);
+    }
+    if (desktop) {
       gsap.fromTo(".process i", { scaleX: 0, transformOrigin: "left center" }, {
         scaleX: 1, duration: .5, stagger: .12, ease: "power2.out",
         scrollTrigger: { trigger: ".process", start: "top 85%", once: true }
