@@ -6,6 +6,22 @@
   var nav = document.querySelector("[data-nav]");
   var copyButton = document.querySelector("[data-copy]");
   var copyStatus = document.querySelector("[data-copy-status]");
+  var english = document.documentElement.lang === "en";
+
+  // Native links provide a complete fallback; JavaScript retains the section.
+  function updateLanguageLinks() {
+    var currentSection = nav.querySelector('a[aria-current="location"]');
+    document.querySelectorAll("[data-language-link]").forEach(function (link) {
+      var url = new URL(link.getAttribute("href"), window.location.href);
+      url.hash = currentSection ? currentSection.hash : window.location.hash;
+      link.href = url.href;
+    });
+  }
+  updateLanguageLinks();
+  window.addEventListener("hashchange", updateLanguageLinks);
+  document.querySelectorAll("[data-language-link]").forEach(function (link) {
+    link.addEventListener("click", updateLanguageLinks);
+  });
 
   function updateHeader() {
     header.classList.toggle("is-scrolled", window.scrollY > 24 || nav.classList.contains("is-open"));
@@ -41,7 +57,7 @@
 
   function setMenu(open) {
     menuButton.setAttribute("aria-expanded", String(open));
-    menuButton.setAttribute("aria-label", open ? "关闭导航" : "打开导航");
+    menuButton.setAttribute("aria-label", english ? (open ? "Close navigation" : "Open navigation") : (open ? "关闭导航" : "打开导航"));
     nav.classList.toggle("is-open", open);
     updateHeader();
   }
@@ -107,7 +123,7 @@
       certificateStage.classList.add("is-manual");
       certificateIndex = (certificateIndex + direction + certificateCards.length) % certificateCards.length;
       positionCertificates();
-      if (certificateStatus) certificateStatus.textContent = "证书 " + (certificateIndex + 1) + " / " + certificateCards.length;
+      if (certificateStatus) certificateStatus.textContent = (english ? "Certificate " : "证书 ") + (certificateIndex + 1) + " / " + certificateCards.length;
       updateCertificatePlayback();
     }
     document.querySelectorAll("[data-certificate-step]").forEach(function (button) {
@@ -210,10 +226,10 @@
         if (!navigator.clipboard) throw new Error("Clipboard unavailable");
         await navigator.clipboard.writeText(value);
       } catch (_) { fallbackCopy(value); }
-      copyStatus.textContent = "微信号已复制。";
+      copyStatus.textContent = english ? "WeChat ID copied." : "微信号已复制。";
       copyTimeout = window.setTimeout(function () { copyStatus.textContent = ""; }, 2600);
     } catch (_) {
-      copyStatus.textContent = "复制失败，请手动复制：" + value;
+      copyStatus.textContent = (english ? "Could not copy. Please copy manually: " : "复制失败，请手动复制：") + value;
     }
   });
 })();

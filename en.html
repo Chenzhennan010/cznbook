@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="Zhennan Chen's portfolio of spatial, visual and digital experience design.">
+    <meta name="theme-color" content="#08090b">
+    <title>Zhennan Chen | Spatial, Visual &amp; Experience Design</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231d1d1f'/%3E%3Cpath d='M8 8h16v3H11v10h13v3H8z' fill='white'/%3E%3Cpath d='M15 14h9v3h-9z' fill='%230066cc'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="motion.css">
+    <link rel="stylesheet" href="language.css">
+    <link rel="alternate" hreflang="zh-CN" href="index.html">
+    <link rel="alternate" hreflang="en" href="en.html">
+    <script src="app.js" defer></script>
+    <script src="vendor/gsap.min.js" defer></script>
+    <script src="vendor/ScrollTrigger.min.js" defer></script>
+    <script src="motion.js?v=20260925-mobile" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Back to home">
+        <span class="brand-mark">CZN</span>
+        <span class="brand-year">PORTFOLIO / 26</span>
+      </a>
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation" data-nav>
+        <a href="#about">About</a>
+        <a href="#work">Work</a>
+        <a href="#approach">Approach</a>
+        <a href="#photography">Photography</a>
+        <a class="nav-contact" href="#contact">Contact</a>
+      </nav>
+      <div class="header-tools">
+        <nav class="language-switch" aria-label="Website language">
+          <a href="index.html" lang="zh-CN" hreflang="zh-CN" data-language-link>中文</a>
+          <span aria-hidden="true">/</span>
+          <a href="en.html" lang="en" hreflang="en" aria-current="page" data-language-link>EN</a>
+        </nav>
+        <button class="menu-button" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false" data-menu-button>
+          <span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero-camera"><img class="hero-media" src="assets/hero-light.jpg" alt="Interior light and stone details photographed by Zhennan Chen" width="2400" height="1800" fetchpriority="high"></div>
+        <div class="hero-shade"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow">SPATIAL · VISUAL · EXPERIENCE</p>
+          <h1 id="hero-title"><span class="hero-line"><span>Starting with space.</span></span><span class="hero-line"><span>Designing how it feels.</span></span></h1>
+          <div class="hero-bottom">
+            <p>Zhennan Chen. Environmental design undergraduate. <br>Exploring connections between space, imagery and digital media.</p>
+            <div class="hero-actions">
+              <a class="button button-light" href="#work">Explore my work <span aria-hidden="true">↓</span></a>
+              <a class="text-link text-link-light" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+        <p class="hero-caption">PERSONAL PHOTOGRAPHY · LIGHT / STRUCTURE / MEMORY</p>
+        <a class="hero-scroll" href="#about" aria-label="Scroll to learn more about me"><span></span>SCROLL TO EXPLORE</a>
+      </section>
+
+      <section class="section about" id="about" aria-labelledby="about-title">
+        <div class="certificate-navigation" aria-label="Browse certificates">
+          <button type="button" data-certificate-step="-1" aria-label="Previous certificate">←</button>
+          <button type="button" data-certificate-step="1" aria-label="Next certificate">→</button>
+          <span class="certificate-status" aria-live="polite" data-certificate-status></span>
+        </div>
+        <div class="certificate-stage" aria-hidden="true" data-certificate-stage>
+          <img src="assets/certificate-01.jpg" alt="" width="700" height="1000" loading="lazy">
+          <img src="assets/certificate-02.jpg" alt="" width="700" height="1000" loading="lazy">
+          <img src="assets/certificate-03.jpg" alt="" width="700" height="1000" loading="lazy">
+          <img src="assets/certificate-04.jpg" alt="" width="700" height="1000" loading="lazy">
+          <img src="assets/certificate-05.jpg" alt="" width="1000" height="800" loading="lazy">
+          <img src="assets/certificate-06.jpg" alt="" width="1000" height="800" loading="lazy">
+          <img src="assets/certificate-07.jpg" alt="" width="700" height="1000" loading="lazy">
+        </div>
+        <div class="section-intro reveal">
+          <p class="section-index">01 / ABOUT</p>
+          <h2 id="about-title">Environmental design<br>is my starting point.</h2>
+        </div>
+
+        <div class="about-layout">
+          <div class="portrait-composition reveal">
+            <figure class="portrait-primary">
+              <img src="assets/portrait-primary.jpg" alt="Portrait of Zhennan Chen" width="960" height="1280">
+            </figure>
+            <figure class="portrait-secondary">
+              <img src="assets/portrait-secondary.jpg" alt="A personal photograph of Zhennan Chen while traveling" width="834" height="961" loading="lazy">
+              <figcaption>IN TRANSIT / PERSONAL NOTE</figcaption>
+            </figure>
+          </div>
+
+          <div class="about-copy reveal">
+            <p class="lead">I start by understanding people and context, then organize complex information into clear spatial relationships, visual stories and experiences.</p>
+            <p>I study Environmental Design at Shenyang Aerospace University. My work spans adaptive reuse, exhibitions, 3D modeling, photography, audiovisual content and web prototypes. I hope to join a design team and keep learning how to develop concepts into complete experiences.</p>
+            <div class="about-meta">
+              <div>
+                <span>EDUCATION</span>
+                <strong>Shenyang Aerospace University</strong>
+                <p>Environmental Design · Bachelor's candidate · Class of 2027</p>
+              </div>
+              <div>
+                <span>STATUS</span>
+                <strong>Seeking a design internship</strong>
+                <p>Available November 2026 · Open to other cities</p>
+              </div>
+            </div>
+            <div class="about-actions">
+              <a class="button button-dark" href="assets/chen-zhennan-resume-en.pdf" download>Download resume <span aria-hidden="true">↓</span></a>
+              <a class="text-link" href="mailto:2892965790@qq.com">2892965790@qq.com <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </div>
+
+        <dl class="stat-grid reveal" aria-label="Profile at a glance">
+          <div><dt>Major ranking</dt><dd>Top 9<span>in major</span></dd></div>
+          <div><dt>Awards received</dt><dd>23<span>awards</span></dd></div>
+          <div><dt>Volunteer service</dt><dd>93<span>hours</span></dd></div>
+          <div><dt>Visual practice</dt><dd>3<span>years+</span></dd></div>
+        </dl>
+
+        <div class="experience reveal" aria-label="Practical experience">
+          <p class="section-index">EXPERIENCE / SELECTED</p>
+          <div class="experience-list">
+            <article>
+              <p class="experience-date">2024.06 — NOW</p>
+              <div><h3>Banxing Youth</h3><p>Publicity &amp; content support</p></div>
+              <p>Completed 10+ rounds of poster production and revision, and supported podcast editing and course coordination.</p>
+            </article>
+            <article>
+              <p class="experience-date">2 YEARS+</p>
+              <div><h3>School of Design and Arts, Audiovisual Team</h3><p>Member</p></div>
+              <p>Photographed and filmed campus sports events, speeches and other activities.</p>
+            </article>
+            <article>
+              <p class="experience-date">2025.09 — 11</p>
+              <div><h3>Fast Retailing (China)</h3><p>Part-time retail support</p></div>
+              <p>Counted and organized clothing to support daily store operations.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section work" id="work" aria-labelledby="work-title">
+        <div class="section-intro reveal">
+          <p class="section-index">02 / SELECTED WORK</p>
+          <h2 id="work-title">Turning ideas into<br>work that communicates.</h2>
+          <p class="section-summary">From spatial research to models, images and web prototypes, these projects trace how I frame problems, develop concepts and refine them through feedback.</p>
+        </div>
+
+        <div class="work-toolbar reveal">
+          <p><span>07</span> spatial projects <i aria-hidden="true">/</i> Sketching <i aria-hidden="true">/</i> Photography</p>
+          <a href="book/index.html?chapter=cover&amp;lang=en">Browse the full portfolio <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="project-list">
+          <article class="project project-wide">
+            <a class="project-trigger" href="book/index.html?chapter=taxia&amp;lang=en" aria-label="View in the portfolio: Tower Village Food Commons">
+              <span class="project-media">
+                <img src="assets/project-taxia.jpg" alt="Tower Village Food Commons spatial design board" width="2200" height="1466" loading="lazy">
+              </span>
+              <span class="project-info">
+                <span class="project-number">01</span>
+                <span><strong>Tower Village Food Commons</strong><small>Cultural experience concept · Web presentation</small></span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </span>
+            </a>
+          </article>
+
+          <article class="project project-portrait">
+            <a class="project-trigger" href="book/index.html?chapter=iot&amp;lang=en" aria-label="View in the portfolio: Connected Living">
+              <span class="project-media">
+                <img src="assets/project-iot.jpg" alt="Connected Living Xiaomi ecosystem showroom design board" width="1698" height="2400" loading="lazy">
+              </span>
+              <span class="project-info">
+                <span class="project-number">02</span>
+                <span><strong>Connected Living</strong><small>Technology exhibition · Models &amp; visuals</small></span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </span>
+            </a>
+          </article>
+
+          <article class="project project-portrait project-offset">
+            <a class="project-trigger" href="book/index.html?chapter=library&amp;lang=en" aria-label="View in the portfolio: Regenerative Library">
+              <span class="project-media">
+                <img src="assets/project-library.jpg" alt="Regenerative Library adaptive reuse design board" width="1695" height="2400" loading="lazy">
+              </span>
+              <span class="project-info">
+                <span class="project-number">03</span>
+                <span><strong>Regenerative Library</strong><small>Adaptive reuse · Independent exterior modeling</small></span>
+                <span class="project-arrow" aria-hidden="true">↗</span>
+              </span>
+            </a>
+          </article>
+        </div>
+
+        <div class="archive">
+          <div class="archive-head">
+            <p class="section-index">MORE WORK / VISUAL INDEX</p>
+            <a class="archive-book-link" href="book/index.html?chapter=cover&amp;lang=en">OPEN THE FULL PORTFOLIO ↗</a>
+          </div>
+          <div class="archive-grid">
+            <figure><a href="book/index.html?chapter=yunqi&amp;lang=en" aria-label="View in the full portfolio: Cloud Art Court"><span class="archive-visual"><img src="assets/project-yunqi.jpg" alt="Cloud Art Court environmental design board" width="2200" height="1556" loading="lazy"></span><figcaption><span>Cloud Art Court</span><small>INTERIOR / RENDERING</small></figcaption></a></figure>
+            <figure><a href="book/index.html?chapter=neighbor&amp;lang=en" aria-label="View in the full portfolio: Neighborhood Commons"><span class="archive-visual"><img src="assets/project-neighbor.jpg" alt="Neighborhood Commons design board" width="1920" height="1080" loading="lazy"></span><figcaption><span>Neighborhood Commons</span><small>COMMUNITY / LIVING</small></figcaption></a></figure>
+            <figure><a href="book/index.html?chapter=liuying&amp;lang=en" aria-label="View in the full portfolio: Courtyard of Flowing Light"><span class="archive-visual"><img src="assets/project-liuying.jpg" alt="Courtyard of Flowing Light landscape design board" width="1920" height="1080" loading="lazy"></span><figcaption><span>Courtyard of Flowing Light</span><small>LANDSCAPE / MATERIAL</small></figcaption></a></figure>
+            <figure><a href="book/index.html?chapter=sea&amp;lang=en" aria-label="View in the full portfolio: Mooring by the Sea"><span class="archive-visual"><img src="assets/project-sea.jpg" alt="Mooring by the Sea coastal design board" width="1920" height="1080" loading="lazy"></span><figcaption><span>Mooring by the Sea</span><small>COAST / COMMUNITY</small></figcaption></a></figure>
+            <figure><a href="book/index.html?chapter=sketch&amp;lang=en" aria-label="View in the full portfolio: Sketching &amp; Drawing"><span class="archive-visual"><img src="assets/project-sketch.jpg" alt="Triumphal Arch of Orange sketching competition board" width="1583" height="2200" loading="lazy"></span><figcaption><span>Sketching &amp; Drawing</span><small>SKETCH / DRAWING</small></figcaption></a></figure>
+            <figure><a href="book/index.html?chapter=photography&amp;lang=en" aria-label="View in the full portfolio: Photography"><span class="archive-visual"><img src="assets/photo-city.jpg" alt="Personal photography" width="1500" height="2000" loading="lazy"></span><figcaption><span>Photography</span><small>LIGHT / STRUCTURE</small></figcaption></a></figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="section approach" id="approach" aria-labelledby="approach-title">
+        <div class="section-intro reveal">
+          <p class="section-index">03 / APPROACH</p>
+          <h2 id="approach-title">My practice spans<br>more than one medium.</h2>
+        </div>
+        <div class="approach-layout">
+        <figure class="space-drawing" aria-label="Spatial line study showing a floor, columns and roof">
+          <div class="drawing-heading"><span>Space begins with relationships.</span><span aria-hidden="true">FIG. 01</span></div>
+          <div class="drawing-field">
+          <svg viewBox="0 0 400 310" fill="none" aria-hidden="true">
+            <g class="drawing-guides" stroke="currentColor" stroke-dasharray="2 6"><path d="M28 225 230 110 384 198M30 240 230 125 382 213M44 249 44 104M204 286 204 68M356 201 356 20"/></g>
+            <g class="drawing-floor" stroke="currentColor"><path d="m44 224 152-88 160 92-152 88z" transform="translate(0 -30)"/><path d="m44 194 0 9 160 92 152-88v-9M204 286v9M120 238l152-87M120 150l160 92"/></g>
+            <g class="drawing-columns" stroke="currentColor"><path d="M70 194V126M196 122V54M329 198v-68M204 270v-68"/><path d="m70 194 6 4v-68M196 122l6 4V58M329 198l6 4v-68M204 270l6 4v-68"/></g>
+            <g class="drawing-roof" stroke="currentColor"><path d="m44 110 152-88 160 92-152 88z" fill="#f5f5f7"/><path d="m44 110 0 9 160 92 152-88v-9M204 202v9M82 88l160 92M120 66l160 92M158 44l160 92"/></g>
+            <g class="drawing-accent" stroke="currentColor"><path d="M18 268h36m-18-18v36M350 48h24m-12-12v24"/><circle cx="362" cy="48" r="17"/></g>
+          </svg>
+          </div>
+          <figcaption><span>Ground <i>—</i> Structure <i>—</i> Roof</span><span>AXONOMETRIC STUDY</span></figcaption>
+        </figure>
+
+        <div class="approach-grid">
+          <article class="reveal">
+            <span class="approach-number">A</span>
+            <h3>Space &amp; experience</h3>
+            <p>Starting with movement, behavior and emotion, I translate functional relationships into spatial experiences.</p>
+          </article>
+          <article class="reveal">
+            <span class="approach-number">B</span>
+            <h3>Visual storytelling</h3>
+            <p>I use composition, photography and layout to create hierarchy and make ideas easier to see and understand.</p>
+          </article>
+          <article class="reveal">
+            <span class="approach-number">C</span>
+            <h3>Digital prototyping</h3>
+            <p>I combine modeling, AI images and websites to turn static concepts into experiences people can explore.</p>
+          </article>
+          <article class="reveal">
+            <span class="approach-number">D</span>
+            <h3>Feedback &amp; iteration</h3>
+            <p>I put early drafts in front of others, then refine the structure, model and presentation in response.</p>
+          </article>
+        </div>
+
+        </div>
+        <div class="process reveal" aria-label="Design process">
+          <div><span>01</span><strong>Understand context</strong><small>CONTEXT</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>02</span><strong>Organize relationships</strong><small>STRUCTURE</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>03</span><strong>Make ideas visible</strong><small>VISUALIZE</small></div>
+          <i aria-hidden="true"></i>
+          <div><span>04</span><strong>Refine with feedback</strong><small>ITERATE</small></div>
+        </div>
+
+        <div class="tool-band reveal">
+          <p>TOOLS & WORKING MEDIA</p>
+          <div class="tool-marquee" aria-label="Tools I use">
+            <span>Photoshop</span><span>Lightroom</span><span>DaVinci Resolve</span><span>CAD</span><span>SketchUp</span><span>Rhino</span><span>D5</span><span>AI-assisted Ideation</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="photography" id="photography" aria-labelledby="photo-title">
+        <div class="photo-register" aria-hidden="true"><span>CONTACT SHEET — 06 SELECTED FRAMES</span><span>Every view is a chance to practice.</span><i>＋</i></div>
+        <div class="photo-heading reveal">
+          <p class="section-index">04 / PHOTOGRAPHY</p>
+          <h2 id="photo-title">Learning to see<br>space through a lens.</h2>
+          <p>I document how light changes materials, scale and the way a place feels. Photography keeps training my eye for composition, rhythm and the moment. <a class="photo-book-link" href="book/index.html?chapter=photography&amp;lang=en">View the photography chapter ↗</a></p>
+        </div>
+
+        <div class="photo-grid">
+          <figure class="photo-large"><a href="book/index.html?chapter=photography&amp;leaf=photo-12&amp;lang=en" aria-label="View in the portfolio: Interior light"><span class="photo-image"><span class="photo-camera"><img src="assets/hero-light.jpg" alt="Light falling on stone inside a building" width="2400" height="1800" loading="lazy"></span></span><figcaption>01 · Interior light</figcaption></a></figure>
+          <figure class="photo-tall"><a href="book/index.html?chapter=photography&amp;leaf=photo-17&amp;lang=en" aria-label="View in the portfolio: Curves &amp; stairs"><span class="photo-image"><span class="photo-camera"><img src="assets/photo-stair.jpg" alt="A curved staircase in window light" width="1500" height="2000" loading="lazy"></span></span><figcaption>02 · Curves &amp; stairs</figcaption></a></figure>
+          <figure class="photo-tall"><a href="book/index.html?chapter=photography&amp;leaf=photo-18&amp;lang=en" aria-label="View in the portfolio: A window to the sea"><span class="photo-image"><span class="photo-camera"><img src="assets/photo-window.jpg" alt="An open window overlooking the sea" width="1500" height="2000" loading="lazy"></span></span><figcaption>03 · A window to the sea</figcaption></a></figure>
+          <figure class="photo-tall"><a href="book/index.html?chapter=photography&amp;leaf=photo-07&amp;lang=en" aria-label="View in the portfolio: City at dusk"><span class="photo-image"><span class="photo-camera"><img src="assets/photo-city.jpg" alt="Distant buildings at dusk" width="1500" height="2000" loading="lazy"></span></span><figcaption>04 · City at dusk</figcaption></a></figure>
+          <figure class="photo-wide"><a href="book/index.html?chapter=photography&amp;leaf=photo-04&amp;lang=en" aria-label="View in the portfolio: A pause in nature"><span class="photo-image"><span class="photo-camera"><img src="assets/photo-nature.jpg" alt="A public space among trees and streams" width="1502" height="2000" loading="lazy"></span></span><figcaption>05 · A pause in nature</figcaption></a></figure>
+          <figure class="photo-parade"><a href="book/index.html?chapter=photography&amp;leaf=photo-10&amp;lang=en" aria-label="View in the portfolio: Streets &amp; people"><span class="photo-image"><span class="photo-camera"><img src="assets/photo-parade.jpg" alt="People and flags in a street parade" width="2000" height="1500" loading="lazy"></span></span><figcaption>06 · Streets &amp; people</figcaption></a></figure>
+        </div>
+      </section>
+
+      <section class="contact" id="contact" aria-labelledby="contact-title">
+        <div class="contact-grid" aria-hidden="true"></div>
+        <div class="contact-wordmark" aria-hidden="true">CZN<span>/26</span></div>
+        <div class="contact-content reveal">
+          <p class="section-index">05 / CONTACT</p>
+          <h2 id="contact-title">Let's work together<br>and take ideas further.</h2>
+          <p>Seeking opportunities in spatial, visual, exhibition, content or experience design.</p>
+          <a class="contact-email" href="mailto:2892965790@qq.com">2892965790@qq.com <span aria-hidden="true">↗</span></a>
+          <div class="contact-details">
+            <a href="tel:+8618502404213"><span>PHONE</span>185 0240 4213</a>
+            <button type="button" data-copy="chendafahahaha"><span>WECHAT</span>chendafahahaha <b>Copy</b></button>
+            <a href="assets/chen-zhennan-resume-en.pdf" download><span>RESUME</span>Download PDF <b>↓</b></a>
+          </div>
+          <p class="copy-status" role="status" aria-live="polite" data-copy-status></p>
+        </div>
+        <footer>
+          <p>ZHENNAN CHEN</p>
+          <p>Designed around space, light and experience.</p>
+          <p>© 2026</p>
+          <a class="back-to-top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+        </footer>
+      </section>
+    </main>
+
+  </body>
+</html>

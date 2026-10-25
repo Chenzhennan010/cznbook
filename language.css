@@ -1,0 +1,28 @@
+/* Language selection follows the existing navigation's type and current state. */
+.site-nav { margin-left: auto; }
+.header-tools { display: flex; align-items: center; flex: 0 0 auto; gap: 8px; margin-left: clamp(16px, 2.2vw, 32px); }
+.language-switch { display: inline-flex; align-items: center; gap: 2px; white-space: nowrap; }
+.language-switch a { display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; color: inherit; font-size: .75rem; letter-spacing: .04em; opacity: .65; }
+.language-switch a[aria-current="page"] { font-weight: 600; text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 1px; opacity: 1; }
+.language-switch a:hover { opacity: 1; }
+.language-switch > span { font-size: .7rem; opacity: .35; }
+.language-switch a:focus-visible { outline: 2px solid currentColor; outline-offset: 1px; border-radius: 2px; }
+html[lang="en"] .hero h1 { font-size: clamp(3.2rem, 7.1vw, 6.8rem); letter-spacing: -.055em; }
+html[lang="en"] .section-intro h2,
+html[lang="en"] .photo-heading h2,
+html[lang="en"] .contact h2 { letter-spacing: -.045em; }
+html[lang="en"] .project-info strong { font-size: clamp(1.25rem, 2.4vw, 2rem); line-height: 1.15; }
+@media (max-width: 1000px) and (min-width: 761px) {
+  .site-nav { gap: 18px; }
+  .brand-year { display: none; }
+}
+@media (max-width: 760px) {
+  .header-tools { margin-left: auto; gap: 8px; }
+  html[lang="en"] .hero h1 { font-size: clamp(2.6rem, 9vw, 4rem); line-height: 1.02; }
+  html[lang="en"] .hero-bottom { gap: 28px; margin-top: 30px; }
+  html[lang="en"] .hero-actions { flex-wrap: wrap; gap: 16px; }
+  html[lang="en"] .contact h2 { font-size: clamp(2.5rem, 8.6vw, 4.2rem); }
+}
+@media (max-width: 380px) {
+  .brand-year { display: none; }
+}
