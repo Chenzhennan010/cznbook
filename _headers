@@ -1,0 +1,5 @@
+/book/book-web/screen-v1/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/book/assets/*
+  Cache-Control: public, max-age=31536000, immutable

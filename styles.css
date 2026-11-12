@@ -1190,6 +1190,11 @@ button {
   object-position: center 54%;
 }
 
+.photo-grid .photo-cityscape img {
+  aspect-ratio: 16 / 10;
+  object-position: center 40%;
+}
+
 .contact {
   position: relative;
   min-height: 90svh;
